@@ -1,0 +1,34 @@
+{
+  "name": "javascript-exercises",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "case-anything": "^2.1.13",
+    "eslint": "^10.0.2",
+    "globals": "^17.3.0",
+    "jest": "^30.5.2",
+    "plop": "^4.0.1"
+  },
+  "engines": {
+    "npm": ">=8.5.5",
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+	"preinstall": "node generators/helpers.js",
+    "test": "jest",
+    "generate": "plop",
+    "lint": "eslint"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/archive/"
+    ]
+  },
+  "allowScripts": {
+    "unrs-resolver@1.12.2": true,
+    "@parcel/watcher@2.6.0": true
+  }
+}
